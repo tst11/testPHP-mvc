@@ -4,5 +4,5 @@
     RewriteBase /tut-files/php/traversyMVC/t_MVC/public
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f 
-    RewiteRule ^(.+)$ index.php?url=$1 [QSA,L]
+    RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
 </IfModule>
